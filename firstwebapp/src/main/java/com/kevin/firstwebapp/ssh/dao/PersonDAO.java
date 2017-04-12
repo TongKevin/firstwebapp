@@ -2,26 +2,15 @@ package com.kevin.firstwebapp.ssh.dao;
 
 import java.util.List;
 
-import org.springframework.stereotype.Repository;
-
 import com.kevin.firstwebapp.ssh.entity.Person;
 
-@Repository
-public class PersonDAO {
+public interface PersonDAO {
 
-	public List<Person> getPersons() {
-		return null;
-	}
+	public List<Person> getPersons();
 
-	public void addPerson(Person person) {
+	public void addPerson(Person person);
 
-	}
+	public void updatePerson(Person person);
 
-	public void updatePerson(Person person) {
-
-	}
-
-	public void deletePerson(Person person) {
-
-	}
+	public void deletePerson(Person person);
 }
